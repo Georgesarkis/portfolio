@@ -37,7 +37,7 @@ app.use(function(err, req, res, next) {
 });
 
 setInterval(function() {
-    http.get("https://ceremonyinvitation.herokuapp.com/");
+    http.get("https://georgesarkisian.herokuapp.com/");
     console.log("iner request!");
 }, 300000);
 
