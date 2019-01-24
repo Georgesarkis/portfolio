@@ -36,6 +36,11 @@ app.use(function(err, req, res, next) {
     res.json(err_res);
 });
 
+setInterval(function() {
+    http.get("https://ceremonyinvitation.herokuapp.com/");
+    console.log("iner request!");
+}, 300000);
+
 app.listen(port, function(err) {
     if (err) throw err;
     console.log(`Express server listening on port ${port}, in ${env} mode`);
