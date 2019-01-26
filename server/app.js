@@ -3,6 +3,7 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var morgan = require('morgan');
 var path = require('path');
+var http = require("http");
 
 // Variables
 var port = process.env.PORT || 3000;
@@ -37,7 +38,7 @@ app.use(function(err, req, res, next) {
 });
 
 setInterval(function() {
-    http.get("https://georgesarkisian.herokuapp.com/");
+    http.get("http://georgesarkisian.herokuapp.com/");
     console.log("iner request!");
 }, 300000);
 
