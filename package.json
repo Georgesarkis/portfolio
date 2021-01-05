@@ -15,7 +15,7 @@
     "url": "git+https://gitlab.com/grischal/express-template.git"
   },
   "dependencies": {
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "body-parser": "^1.18.3",
     "browserify": "^16.2.2",
     "express": "^4.16.4",
